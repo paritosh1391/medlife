@@ -1419,7 +1419,7 @@ ul.tabs-nav .tab-nav.active {
 /* ======================= ABOUT MYSELF =========================== */
 .about_myself .about_box {
     background: #f9f9ff;
-    padding: 80px 120px 21px;
+    padding: 80px 108px 21px;
 }
 .pad_bottom {
     padding-bottom: 120px;
@@ -1452,8 +1452,65 @@ ul.tabs-nav .tab-nav.active {
 }
 .about_myself .activity .activity_box h3 {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 500;
 }
 .about_myself .activity .activity_box p {
     margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+/* =================== Amenities =================== */
+.custom-tabs .nav-pills .nav-link {
+    padding-left: 0;
+    font-size: 26px;
+    font-weight: 100;
+    color: #adb5bd;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.custom-tabs .nav-pills .nav-link.active {
+    background: none;
+    color: #007bff;
+    padding-left: 20px;
+    position: relative;
+}
+.custom-tabs .nav-pills .nav-link.active:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 2px;
+    background: #5AC8D8;
+}   
+.custom-tabs .nav-pills .nav-link span {
+    font-size: 18px;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+.fade.show {
+    opacity: 1;
+}
+.custom-tabs .tab-pane .icon {
+    font-size: 60px;
+    display: block;
+    color: #007bff;
+}
+.custom-tabs .tab-pane h2 {
+    font-size: 60px;
+    font-weight: 300;
+}
+.tab-pane p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.tab-pane p.lead {
+    font-size: 20px;
+    font-weight: 300;
 }
