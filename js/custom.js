@@ -199,6 +199,11 @@ $(document).ready(function($){
 				scrollTop: target.offset().top
 			}, 1000);
 		}
+
+		if($(window).width() < 768) {
+			$(this).closest('.site-navigation ').removeClass('show');
+			$('.hamburger-menu').removeClass('open');
+		}
 	});
 
 	$('.modal-btn').click(function(){

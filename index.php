@@ -21,7 +21,7 @@
 
   <?php 
   if($_POST["submit"]) {
-    $recipient="paritosh.singh@nextraworld.com";
+    $recipient="xyz@gmail.com, digvijay6666@gmail.com, gargdee@gmail.com, consultant@divinecosmeticsurgery.com, amit@divinecosmeticsurgery.com, deepti@divinecosmeticsurgery.com, info@divinecosmeticsurgery.com";
     $subject="Appointment";
     $sender=@$_POST["sender"];
     $senderEmail=@$_POST["senderEmail"];
@@ -175,7 +175,7 @@
             <h2 class="d-flex align-items-center">Make an Appointment</h2>
             <?php 
             if($_POST["submit"]) {
-              $recipient="paritosh.singh@nextraworld.com";
+              $recipient="xyz@gmail.com, digvijay6666@gmail.com, gargdee@gmail.com, consultant@divinecosmeticsurgery.com, amit@divinecosmeticsurgery.com, deepti@divinecosmeticsurgery.com, info@divinecosmeticsurgery.com";
               $senderSubject=@$_POST["senderSubject"];
               $sender=@$_POST["sender"];
               $senderEmail=@$_POST["senderEmail"];
@@ -186,9 +186,15 @@
             }
             ?>
             <form class="d-flex flex-wrap justify-content-between" method="POST">
-              <input type="text" id="fname" name="sender" class="form-control" placeholder="Name" required>
-              <input type="text" id="num" name="senderNum" class="form-control" placeholder="Phone No" required>
-              <input type="text" id="email" name="senderEmail" class="form-control" placeholder="Email" required>
+              <div class="form-group">
+                <input type="text" id="fname" name="sender" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <input type="text" id="num" name="senderNum" class="form-control" placeholder="Phone No" required>
+              </div>
+              <div class="form-group">
+                <input type="text" id="email" name="senderEmail" class="form-control" placeholder="Email" required>
+              </div>
               
               <input class="button gradient-bg" type="submit" value="Book Appoitnment">
             </form>
@@ -709,7 +715,7 @@
               <div class="footer-contact-form">
                  <?php 
             if($_POST["submit"]) {
-              $recipient="paritosh.singh@nextraworld.com";
+              $recipient="xyz@gmail.com, digvijay6666@gmail.com, gargdee@gmail.com, consultant@divinecosmeticsurgery.com, amit@divinecosmeticsurgery.com, deepti@divinecosmeticsurgery.com, info@divinecosmeticsurgery.com";
               $senderSubject=@$_POST["senderSubject"];
               $sender=@$_POST["sender"];
               $senderEmail=@$_POST["senderEmail"];
@@ -720,9 +726,15 @@
             }
             ?>
                 <form action="#" method="POST">
-                  <input type="text" class="form-control border-top-0 border-right-0 border-left-0" id="fname2" name="sender" class="form-control" placeholder="Name" required>
-                  <input type="text" class="form-control border-top-0 border-right-0 border-left-0" id="email" name="senderEmail" class="form-control" placeholder="Email" required>
-                  <input type="text" class="form-control border-top-0 border-right-0 border-left-0" id="num" name="senderNum" class="form-control" placeholder="Phone No" required>
+                  <div class="form-group">
+                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0" id="fname2" name="sender" class="form-control" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0" id="email" name="senderEmail" class="form-control" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0" id="num" name="senderNum" class="form-control" placeholder="Phone No" required>
+                  </div>
                   <input type="submit" class="btn btn-primary btn-learn btn-submit medilife-btn" name="submit" value="Submit">
                 </form>
               </div>
