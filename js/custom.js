@@ -38,17 +38,17 @@ $(document).ready(function(){
 	});
 	
 	// Accordion & Toggle
-	$('.accordion-wrap.type-accordion').collapsible({
-		accordion: true,
-		contentOpen: 0,
-		arrowRclass: 'arrow-r',
-		arrowDclass: 'arrow-d'
-	});
+	// $('.accordion-wrap.type-accordion').collapsible({
+	// 	accordion: true,
+	// 	contentOpen: 0,
+	// 	arrowRclass: 'arrow-r',
+	// 	arrowDclass: 'arrow-d'
+	// });
 	
-	$('.accordion-wrap .entry-title').on('click', function() {
-		$('.accordion-wrap .entry-title').removeClass('active');
-		$(this).addClass('active');
-	});
+	// $('.accordion-wrap .entry-title').on('click', function() {
+	// 	$('.accordion-wrap .entry-title').removeClass('active');
+	// 	$(this).addClass('active');
+	// });
 	
 	// Tabs
 	$(function() {
@@ -68,65 +68,65 @@ $(document).ready(function(){
 	});
 	
 	// Circular Progress Bar
-	$('#loader_1').circleProgress({
-		startAngle: -Math.PI / 4 * 2,
-		value: 0.90,
-		size: 156,
-		thickness: 4,
-		fill: {
-			gradient: ["#5386e7", "#43a7f0"]
-		}
-	}).on('circle-animation-progress', function(event, progress) {
-		$(this).find('strong').html(Math.round(90 * progress) + '<i>%</i>');
-	});
+	// $('#loader_1').circleProgress({
+	// 	startAngle: -Math.PI / 4 * 2,
+	// 	value: 0.90,
+	// 	size: 156,
+	// 	thickness: 4,
+	// 	fill: {
+	// 		gradient: ["#5386e7", "#43a7f0"]
+	// 	}
+	// }).on('circle-animation-progress', function(event, progress) {
+	// 	$(this).find('strong').html(Math.round(90 * progress) + '<i>%</i>');
+	// });
 	
-	$('#loader_2').circleProgress({
-		startAngle: -Math.PI / 4 * 2,
-		value: 0.65,
-		size: 156,
-		thickness: 4,
-		fill: {
-			gradient: ["#5386e7", "#43a7f0"]
-		}
-	}).on('circle-animation-progress', function(event, progress) {
-		$(this).find('strong').html(Math.round(65 * progress) + '<i>%</i>');
-	});
+	// $('#loader_2').circleProgress({
+	// 	startAngle: -Math.PI / 4 * 2,
+	// 	value: 0.65,
+	// 	size: 156,
+	// 	thickness: 4,
+	// 	fill: {
+	// 		gradient: ["#5386e7", "#43a7f0"]
+	// 	}
+	// }).on('circle-animation-progress', function(event, progress) {
+	// 	$(this).find('strong').html(Math.round(65 * progress) + '<i>%</i>');
+	// });
 	
-	$('#loader_3').circleProgress({
-		startAngle: -Math.PI / 4 * 2,
-		value: 0.25,
-		size: 156,
-		thickness: 4,
-		fill: {
-			gradient: ["#5386e7", "#43a7f0"]
-		}
-	}).on('circle-animation-progress', function(event, progress) {
-		$(this).find('strong').html(Math.round(25 * progress) + '<i>%</i>');
-	});
+	// $('#loader_3').circleProgress({
+	// 	startAngle: -Math.PI / 4 * 2,
+	// 	value: 0.25,
+	// 	size: 156,
+	// 	thickness: 4,
+	// 	fill: {
+	// 		gradient: ["#5386e7", "#43a7f0"]
+	// 	}
+	// }).on('circle-animation-progress', function(event, progress) {
+	// 	$(this).find('strong').html(Math.round(25 * progress) + '<i>%</i>');
+	// });
 	
-	$('#loader_4').circleProgress({
-		startAngle: -Math.PI / 4 * 2,
-		value: 0.59 ,
-		size: 156,
-		thickness: 4,
-		fill: {
-			gradient: ["#5386e7", "#43a7f0"]
-		}
-	}).on('circle-animation-progress', function(event, progress) {
-		$(this).find('strong').html(Math.round(59 * progress) + '<i>%</i>');
-	});
+	// $('#loader_4').circleProgress({
+	// 	startAngle: -Math.PI / 4 * 2,
+	// 	value: 0.59 ,
+	// 	size: 156,
+	// 	thickness: 4,
+	// 	fill: {
+	// 		gradient: ["#5386e7", "#43a7f0"]
+	// 	}
+	// }).on('circle-animation-progress', function(event, progress) {
+	// 	$(this).find('strong').html(Math.round(59 * progress) + '<i>%</i>');
+	// });
 	
-	$('#loader_5').circleProgress({
-		startAngle: -Math.PI / 4 * 2,
-		value: 0.83 ,
-		size: 156,
-		thickness: 4,
-		fill: {
-			gradient: ["#5386e7", "#43a7f0"]
-		}
-	}).on('circle-animation-progress', function(event, progress) {
-		$(this).find('strong').html(Math.round(83 * progress) + '<i>%</i>');
-	});
+	// $('#loader_5').circleProgress({
+	// 	startAngle: -Math.PI / 4 * 2,
+	// 	value: 0.83 ,
+	// 	size: 156,
+	// 	thickness: 4,
+	// 	fill: {
+	// 		gradient: ["#5386e7", "#43a7f0"]
+	// 	}
+	// }).on('circle-animation-progress', function(event, progress) {
+	// 	$(this).find('strong').html(Math.round(83 * progress) + '<i>%</i>');
+	// });
 	
 	// Counter
 	$(".start-counter").each(function () {
@@ -140,14 +140,14 @@ $(document).ready(function(){
 	});
 	
 	// Bar Filler
-	$('.featured-fund-raised-bar').barfiller({ barColor: '#ff5a00', duration: 1500 });
+	// $('.featured-fund-raised-bar').barfiller({ barColor: '#ff5a00', duration: 1500 });
 	
-	$('.fund-raised-bar-1').barfiller({ barColor: '#ff5a00', duration: 1500 });
-	$('.fund-raised-bar-2').barfiller({ barColor: '#ff5a00', duration: 1500 });
-	$('.fund-raised-bar-3').barfiller({ barColor: '#ff5a00', duration: 1500 });
-	$('.fund-raised-bar-4').barfiller({ barColor: '#ff5a00', duration: 1500 });
-	$('.fund-raised-bar-5').barfiller({ barColor: '#ff5a00', duration: 1500 });
-	$('.fund-raised-bar-6').barfiller({ barColor: '#ff5a00', duration: 1500 });
+	// $('.fund-raised-bar-1').barfiller({ barColor: '#ff5a00', duration: 1500 });
+	// $('.fund-raised-bar-2').barfiller({ barColor: '#ff5a00', duration: 1500 });
+	// $('.fund-raised-bar-3').barfiller({ barColor: '#ff5a00', duration: 1500 });
+	// $('.fund-raised-bar-4').barfiller({ barColor: '#ff5a00', duration: 1500 });
+	// $('.fund-raised-bar-5').barfiller({ barColor: '#ff5a00', duration: 1500 });
+	// $('.fund-raised-bar-6').barfiller({ barColor: '#ff5a00', duration: 1500 });
 	
 	// Load more
 	let $container      = $('.portfolio-container');
@@ -190,4 +190,24 @@ $(document).ready(function($){
 		delay: 10,
 		time: 1000
 	});
+
+	$('.main-menu a[href^="#"]').on('click', function(event) {
+		var target = $(this.getAttribute('href'));
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').stop().animate({
+				scrollTop: target.offset().top
+			}, 1000);
+		}
+	});
+
+	$('.modal-btn').click(function(){
+		$('.popup-modal').addClass('active');
+	});
+
+	$(".modal-body form").validate();
+
+	$(".appointment-box form").validate();
+
+	$(".foot-contact form").validate();
 });
